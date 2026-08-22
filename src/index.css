@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+#root {
+  min-height: 100vh;
+}
+
 /* Landing page font: dot-matrix inspired display */
 @font-face {
   font-family: "BubbledotICG-FinePos";

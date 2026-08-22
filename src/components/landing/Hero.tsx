@@ -1,6 +1,4 @@
-"use client";
-
-import Link from "next/link";
+import type { ReactNode } from "react";
 
 type TrustIcon = {
   label: string;
@@ -8,7 +6,7 @@ type TrustIcon = {
   offset: string;
   delay: string;
   z: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
 };
 
 const TRUST_ICONS: TrustIcon[] = [
@@ -137,12 +135,12 @@ export default function Hero() {
 
       {/* CTA */}
       <div className="lp-anim-fade-up mt-8" style={{ animationDelay: "0.85s" }}>
-        <Link
+        <a
           href="/register"
           className="lp-cta-pulse inline-flex items-center justify-center rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-slate-950 transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 sm:text-base"
         >
           Get Started Free
-        </Link>
+        </a>
       </div>
     </section>
   );
